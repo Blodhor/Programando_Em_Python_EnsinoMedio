@@ -3,7 +3,7 @@
 ##########
 #Opcional#
 ##########
-# Abra em um terminal o modo interativo ou utilize o jupyter notebook
+# Abra em um terminal o modo interativo ou utilize o Jupyter notebook
 
 ##########
 # NÚMEROS#
@@ -45,11 +45,11 @@ print(e1, '\n', e2)
 # sem erros
 print('para \'bc\'...')
 
-''' para escrever frases ou comentarios no codigo
+''' para escrever frases ou comentários no código
  com mais de uma linha, usamos 3 aspas 
 '''
-print(""" aspas dupla 
-também é aceita""")
+print(""" As aspas dupla 
+também são aceitas""")
 
 #Podemos usar operações para repetir padrões em uma frase
 # e também podemos juntar 2 frases distintas
@@ -68,7 +68,7 @@ print(f2[-2]) # não faz sentido -0, então começa de -1
 #podemos também selecionar frases menores
 print(f2[3:])#posição 4 até o fim
 print(f2[3:10])#posição 4 até antes da 10 (de 4 a 9)
-print(f2[3:-2])#posição 4 até antes da penultima
+print(f2[3:-2])#posição 4 até antes da penúltima
 
 #não podemos alterar frases diretamente, 
 # mas usando operações podemos gerar novas
@@ -110,7 +110,7 @@ print(l1)
 #podemos, se necessário, dar vários nomes 
 # para uma mesma coisa
 l5=l1
-# o simbolo == verifica se dois objetos
+# o símbolo == verifica se dois objetos
 # são iguais
 #  'id' devolve o endereço de memoria
 #   que o objeto foi guardado
