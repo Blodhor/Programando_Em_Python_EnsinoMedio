@@ -33,6 +33,8 @@ while i<4:
 # 0!=1, 1!=1, 2!= 2*1, 3!= 3*2*1, ...
 
 l, j =[1], 1 # dessa forma não precisamos de várias linhas
+             #'l' recebe o primeiro valor '[1]'; 'j' o segundo '1';
+             #  e assim por diante se tiverem mais valores 
 
 while j <10:
     # de 0 a 9 temos 10 fatoriais
@@ -43,7 +45,7 @@ while j <10:
 print(l)
 
 # temos outro formato de ciclo que não precisa se preocupar
-# sempre mudar a variavel do ciclo
+# em sempre mudar a variavel do ciclo
 
 for i in ['maçã','uva','banana','melão']:
     # 'i' nesse ciclo recebe os valores da lista 
@@ -53,13 +55,13 @@ for i in ['maçã','uva','banana','melão']:
 for i in [0,1,2,3,4]:
     print(i)
     
-# para sequencia de numeros podemos usar range()
+# para sequencia de numeros inteiros podemos usar 'range()'
 for i in range(10):
     print(i)
 
-print("podemos modificar a sequência do range")
+print("Podemos modificar a sequência do range")
 for i in range(1,10,2):
-    # começa a sequência em 1, termina em 10
+    # começa a sequência em 1, termina em 10 ou antes de 10 (respeitando o passo)
     # com passo de 2 em 2
     print(i)
 
@@ -67,17 +69,17 @@ for i in range(1,10,2):
 #PEDINDO VALORES ANTES DE EXECUTAR#
 ###################################
 
-# o comando input pede uma informação de quem executa o codigo
-# essa informação é recebida como frase
-# se queremos um número, teremos que modificar o tipo
+# o comando 'input' pede uma informação de quem executa o codigo
+# essa informação é recebida como um tipo frase
+# se queremos um tipo número, teremos que modificar o tipo
 x= input("Escolha um número inteiro: ")
 print(type(x), type(5)) # comando type indica o tipo do objeto
 # x terá tipo de frase ('str') e 5 de inteiro ('int')
 
 #se uma frase for composta de apenas um numero inteiro
 # podemos fazer a conversão
-x=int(x)
-print("apos conversão ", type(x))
+x=int(x) # de forma semelhante, se for um número real usamos 'float' 
+print("Após a conversão ", type(x))
 
 #############
 # SE e SENÃO#
