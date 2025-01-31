@@ -146,7 +146,7 @@ def Mostre_vetor(vetores=[], referencia = Vetor2D((0,0))):
         x, y = vetores.pe
         xp,yp = vetores.ponta
         o = [x], [y] #pe do vetor
-        p = [xp], [yp] # ponta do vetor
+        p = [xp-x], [yp-y] # quantas unidades na direção da ponta do vetor
         plt.quiver(*o,*p,angles='xy', scale_units='xy',scale=1)
         # por algum motivo o 'quiver não encaixa corretamente o zoom do gráfico
         #  então ajustamos para o tamanho do vetor
@@ -171,7 +171,7 @@ def Mostre_vetor(vetores=[], referencia = Vetor2D((0,0))):
             yfim = max(y,yp,yfim)
 
             o = [x], [y] #pe do vetor
-            p = [xp], [yp] # ponta do vetor
+            p = [xp-x], [yp-y] # quantas unidades na direção da ponta do vetor
             plt.quiver(*o,*p,angles='xy', scale_units='xy',scale=1,color=cores[indice_cor],label=i)
             indice_cor +=1
             if indice_cor == len(cores):
@@ -198,7 +198,7 @@ Atividade 1: Implemente o produto por escalar e mostre com gráfico.
 Ex:  inicio: -> ; após produto por 3: --->
 
 Atividade 2: Em uma brincadeira de caça ao tesouro, o mapa diz que para chegar
- ao local onde a arco de ouro está enterrada, deve-se, primeiramente, dar 10
+ ao local onde a arca de ouro está enterrada, deve-se, primeiramente, dar 10
  passos na direção norte, depois 12 passos para o leste, em seguida, 7 passos
  para o sul, e finalmente 8 passos para oeste.
 A partir dessas informações:
