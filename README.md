@@ -17,7 +17,7 @@ localmente o Python e todas as bibliotecas que precisamos.
 ---
 
 No celular, caso seja Android, baixe o Pydroid 3 pela Google Play
-O aplicativo já vem com o a opção Pip, que ajuda muito a instalar
+O aplicativo já vem com a opção Pip, que ajuda muito a instalar
 biliotecas.
 
 
