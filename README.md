@@ -83,4 +83,25 @@ Aula 3
 Código "Gráficos.py":
 
     Conteúdo:
-      1.
+      1. Uso de bibliotecas não padrão (instalar o matplotlib se não estiver usando o Google Colab);
+      2. Constuindo um gráfico com uma lista de pontos;
+      3. Atividade.
+
+Aula 4:
+--
+
+Código "Vetores.py":
+
+    Conteúdo:
+        1. Vetores no plano XY;
+        2. Uso do método "classe" para definir um vetor;
+        3. Uso do método quiver do matplotlib para mostrar os vetores em gráfico;
+        4. Atividades.
+
+Aula 5:
+--
+
+Código "Equacoes.py":
+
+    Conteúdo:
+        1.
