@@ -11,7 +11,7 @@ class Vetor2D:
     # nomes definidos fora do método construtor "__init__" são da classe que cria todos os objetos
     # ou seja, são compartilhados entre todos os objetos
     sempre_origem = True
-    def __init__(self, ponta=(0,1), pe=(0,0)):
+    def __init__(self, ponta=(0,1), pe=(0,0),nome='v'):
         ''' Método que constrói o vetor.
 
         Notação que usaremos nos vetores:
@@ -23,6 +23,12 @@ class Vetor2D:
         #nomes definidos no método __init__ são exclusivos do objeto que foi criado
         self.pe = pe 
         self.ponta = ponta
+        self.nome = nome
+    
+    def __str__(self):
+        '''Faz com que, se é pedido o vetor diretamente ( ex:print(vetor) ), 
+        o nome que foi dado ao vetor aparece ao invés do seu endereço ou tipo'''
+        return self.nome
     
     def __add__(self, vetor):
         '''Permite adição de dois vetores'''
@@ -59,7 +65,8 @@ class Vetor2D:
             self.sempre_origem = False
             novopex, novopey = self.pe
             novapontax, novapontay = vetor.ponta
-            novo = Vetor2D(pe=(novopex,novopey),ponta=(novapontax,novapontay))
+            novonome="%s+%s"%(self.nome,vetor.nome)
+            novo = Vetor2D(pe=(novopex,novopey),ponta=(novapontax,novapontay),nome=novonome)
             #podemos ajustar o vetor 2 para a posição inicial
             vetor.pe = (pe2x,pe2y)
             vetor.ponta = (po2x,po2y)
@@ -152,7 +159,6 @@ def Mostre_vetor(vetores=[], referencia = Vetor2D((0,0))):
         cores =['b','g','r','c','m','y','k'] # ignoramos 'w' pois o fundo é branco
         indice_cor=0
         for i in vetores:
-            #contador += 1
             if type(i)!= type(referencia):
                 print(i, "Não é do tipo Vetor2D!")
                 return 404
@@ -166,10 +172,11 @@ def Mostre_vetor(vetores=[], referencia = Vetor2D((0,0))):
 
             o = [x], [y] #pe do vetor
             p = [xp], [yp] # ponta do vetor
-            plt.quiver(*o,*p,angles='xy', scale_units='xy',scale=1,color=cores[indice_cor])
+            plt.quiver(*o,*p,angles='xy', scale_units='xy',scale=1,color=cores[indice_cor],label=i)
             indice_cor +=1
             if indice_cor == len(cores):
                 indice_cor = 0
+        plt.legend(loc="upper left") #para a legenda aparecer no topo esquerdo
         plt.xlim(xini, xfim)
         plt.ylim(yini, yfim)
     else:
@@ -182,8 +189,8 @@ def Mostre_vetor(vetores=[], referencia = Vetor2D((0,0))):
     plt.show() 
 
 if __name__ == "__main__":
-    a = Vetor2D((1,2))
-    b = Vetor2D((1,-2))
+    a = Vetor2D((1,2),nome='a')
+    b = Vetor2D((1,-2),nome='b')
     c = a+b
     Mostre_vetor([a,b,c])
     '''
