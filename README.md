@@ -3,36 +3,29 @@ As aulas foram montadas usando a versão 3.11.9 do Python.
 ----
 Algumas opções de como usar o Python:
 --
-Tanto no computador quanto no celular podemos utilizar o 
-Python sem instalar nada com uso de alguns sites, dentre os
-mais confiáveis temos o Google Colab:
+Tanto no computador quanto no celular podemos utilizar o Python sem instalar nada com uso de
+alguns sites, dentre os mais confiáveis temos o Google Colab:
 https://colab.research.google.com/notebooks/intro.ipynb
 
 
-O problema de opções como o Google Colab é a dependência de 
-conexão com a internet e as possíveis falhas devido a super
-lotação do site. Para não lidar com isso precisamos instalar
-localmente o Python e todas as bibliotecas que precisamos.
+O problema de opções como o Google Colab é a dependência de conexão com a internet e as possíveis falhas devido a super lotação do site. Para não lidar com isso precisamos instalar localmente o Python e todas as bibliotecas que precisamos.
 
 ---
 
-No celular, caso seja Android, baixe o Pydroid 3 pela Google Play
-O aplicativo já vem com a opção Pip, que ajuda muito a instalar
-biliotecas.
+No celular, caso seja Android, baixe o Pydroid 3 pela Google Play O aplicativo já vem com a opção Pip, que ajuda muito a instalar biliotecas.
 
 
 No Windows é possível executar o python direto no 
 terminal powershell ou com auxílio de programas como 
 o Visual Studio Code,
-(https://code.visualstudio.com/docs/setup/windows)
-No Visual Studio Code vá em Extensões e intale Python e 
-o Pip Manager.
+
+(https://code.visualstudio.com/docs/setup/windows).
+
+No Visual Studio Code vá em Extensões e instale Python e o Pip Manager.
 
 
 Nos sistemas Linux é fácil de usar o python, pois nas 
-versões mais recentes do Ubuntu o compilador de python 
-já vem pré instalado no sistema operacional, e podemos 
-checar sua versão com o comando:
+versões mais recentes do Ubuntu o compilador de python já vem pré-instalado no sistema operacional, e podemos checar sua versão com o comando:
 
 $ python --version
 
