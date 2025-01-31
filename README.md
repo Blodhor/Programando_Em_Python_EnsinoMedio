@@ -52,17 +52,19 @@ $ sudo apt-get install python3-pip
 Aula 1:
 --
 
-Código "Iniciando.py":
-  Conteúdo:
-    Introdução aos comando e funcionalidades do Python;
-    Operações com números, textos e listas.
+Código "Iniciando.py"
 
-Código "Fundamentos.py":
+  Conteúdo:
+    1. Introdução aos comando e funcionalidades do Python;
+    2. Operações com números, textos e listas.
+
+Código "Fundamentos.py"
+
     Conteúdo:
-        Ciclos;
-        Interação com o programa (comando input);
-        Estrutura condicional if-elif-else;
-        Atividades.
+        1. Ciclos;
+        2. Interação com o programa (comando input);
+        3. Estrutura condicional if-elif-else;
+        4. Atividades.
 
 Aula 2
 --
