@@ -53,7 +53,7 @@ Aula 1:
 --
 
 Código "Iniciando.py":
-\t  Conteúdo:
+  Conteúdo:
     Introdução aos comando e funcionalidades do Python;
     Operações com números, textos e listas.
 
