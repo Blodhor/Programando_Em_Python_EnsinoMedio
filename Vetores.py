@@ -118,8 +118,8 @@ class Vetor2D:
     def tamanho(self):
         '''Caso o vetor não seja paralelo a nenhuma eixo,
           pode ser útil saber seu tamanho'''
-        # Para isso, basta considerar linha que ligam os pontos diretamente aos eixos X e Y
-        # escolha um dos triângulos formados com a hipotenusa entre o 'pe' e a 'ponta'
+        # Para isso, basta considerar linhas que ligam os pontos diretamente aos eixos X e Y
+        # escolher um dos triângulos formados com a hipotenusa entre o 'pe' e a 'ponta'
         # e aplicar o teorema de Pitágoras
         pex, pey = self.pe
         pox, poy = self.ponta
