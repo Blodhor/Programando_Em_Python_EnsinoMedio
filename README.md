@@ -54,9 +54,9 @@ Aula 1:
 
 Código "Iniciando.py"
 
-  Conteúdo:
-    1. Introdução aos comando e funcionalidades do Python;
-    2. Operações com números, textos e listas.
+    Conteúdo:
+      1. Introdução aos comando e funcionalidades do Python;
+      2. Operações com números, textos e listas.
 
 Código "Fundamentos.py"
 
@@ -70,13 +70,17 @@ Aula 2
 --
 
 Código "Fundamentos2.py":
+    
     Conteúdo:
-        Ciclos infinitos;
-        Definição de Métodos;
-        Funções matemáticas (comando lambda);
-        Atividades.
+        1. Ciclos infinitos;
+        2. Definição de Métodos;
+        3. Funções matemáticas (comando lambda);
+        4. Atividades.
 
 Aula 3
 --
 
 Código "Gráficos.py":
+
+    Conteúdo:
+      1.
