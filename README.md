@@ -104,4 +104,7 @@ Aula 5:
 Código "Equacoes.py":
 
     Conteúdo:
-        1.
+        1. Expressões matemática (variável 'x' sem valores específicos);
+        2. Expandindo e fatorando equações;
+        3. Resolvendo equações e sistemas de equações;
+        4. Atividade.
