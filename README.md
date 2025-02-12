@@ -55,7 +55,7 @@ Aula 1:
 Código "Iniciando.py"
 
     Conteúdo:
-      1. Introdução aos comando e funcionalidades do Python;
+      1. Introdução aos comandos e funcionalidades do Python;
       2. Operações com números, textos e listas.
 
 Código "Fundamentos.py"
