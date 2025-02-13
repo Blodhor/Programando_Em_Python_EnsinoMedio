@@ -84,7 +84,7 @@ Código "Gráficos.py":
 
     Conteúdo:
       1. Uso de bibliotecas não padrão (instalar o matplotlib se não estiver usando o Google Colab);
-      2. Constuindo um gráfico com uma lista de pontos;
+      2. Construindo um gráfico com uma lista de pontos;
       3. Atividade.
 
 Aula 4:
