@@ -160,9 +160,10 @@ def Mostre_vetor(vetores=[], referencia = Vetor2D((0,0))):
         p = [xp-x], [yp-y] # quantas unidades na direção da ponta do vetor
         plt.quiver(*o,*p,angles='xy', scale_units='xy',scale=1)
         # por algum motivo o 'quiver não encaixa corretamente o zoom do gráfico
-        #  então ajustamos para o tamanho do vetor
-        plt.xlim(x, xp)
-        plt.ylim(y, yp)
+        #  então ajustamos para o tamanho do vetor e adicionamos um espaço de margem
+        mx, my = ((xp - x)/10.0, (yp - y)/10.0)
+        plt.xlim(x-mx, xp+mx)
+        plt.ylim(y-my, yp+my)
     elif type(vetores) == type([]):
         #limites do gráfico XY
         xini, xfim = 1000, -1000 # definidos com valores estupidos, para trocar facilmente depois
@@ -188,7 +189,7 @@ def Mostre_vetor(vetores=[], referencia = Vetor2D((0,0))):
             if indice_cor == len(cores):
                 indice_cor = 0
         plt.legend(loc="upper left") #para a legenda aparecer no topo esquerdo
-        #adicionando uma espaço de margem para os vetores ficarem todos visiveis
+        #adicionando um espaço de margem para os vetores ficarem todos visiveis
         margemx, margemy = ((xfim - xini)/10.0, (yfim - yini)/10.0)
         plt.xlim(xini-margemx, xfim+margemx)
         plt.ylim(yini-margemy, yfim+margemy)
