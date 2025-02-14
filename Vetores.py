@@ -188,8 +188,10 @@ def Mostre_vetor(vetores=[], referencia = Vetor2D((0,0))):
             if indice_cor == len(cores):
                 indice_cor = 0
         plt.legend(loc="upper left") #para a legenda aparecer no topo esquerdo
-        plt.xlim(xini, xfim)
-        plt.ylim(yini, yfim)
+        #adicionando uma espaço de margem para os vetores ficarem todos visiveis
+        margemx, margemy = ((xfim - xini)/10.0, (yfim - yini)/10.0)
+        plt.xlim(xini-margemx, xfim+margemx)
+        plt.ylim(yini-margemy, yfim+margemy)
     else:
         #não é um vetor ou uma lista de vetores
         print(vetores, "Não é do tipo Vetor2D ou uma lista de Vetor2D!")
