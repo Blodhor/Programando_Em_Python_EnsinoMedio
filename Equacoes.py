@@ -1,4 +1,4 @@
-# Baseado no tuotrial de https://docs.sympy.org/latest/tutorials/intro-tutorial/index.html
+# Baseado no tutorial de https://docs.sympy.org/latest/tutorials/intro-tutorial/index.html
 import sympy as sp
 
 # sympy foi feito para cálculos matemáticos exatos, sem aproximações
