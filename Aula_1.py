@@ -3,20 +3,20 @@
 ##########
 #Opcional#
 ##########
-# Abra em um terminal o modo interativo ou utilize o Jupyter notebook
+# Abra em um terminal o modo interativo ou utilize o jupyter notebook
 
 ##########
 # NÚMEROS#
 ##########
 
 #Podemos utilizar o python como uma calculadora simples
-# Fora do notebook/ou modo interativo, precisamos imprimir na tela
-#  os resultados, para isso o comando 'print'
+# Fora do notebook/ou modo interativo, precisamos imprimir na tela os resultados, para isso usamos o comando 'print'
+
 print(5+5)  #soma
 print(5-2)  #subtração
 print(5*6)  #multiplicação
 print(8/2)  #divisão #sempre devolve não inteiro
-print(2**3) #potencia
+print(2**3) #potência
 
 # Divisão inteira # a vírgula no print indica
 #  separação por espaço
@@ -24,8 +24,7 @@ print(int(5/2), 5//2)
 # resto de divisão inteira
 print(5%2)
 
-#podemos associar nomes a qualquer valor,
-#  usando o sinal =
+# podemos associar nomes a qualquer valor, usando o sinal ‘=’
 #  e trabalhar com os nomes
 largura= 20
 altura= 45
@@ -35,45 +34,41 @@ print(largura*altura)
 #FRASES#
 ########
 
-# Podemos definir uma frase usando aspas
+# Podemos definir uma frase usando as aspas
 e1='ovos mexidos'
 e2='vai descer'
 print(e1, e2)
-# o símbolo \n numa frase força a mudança de linha
+# o símbolo ‘\n’ numa frase força a mudança de linha
 print(e1, '\n', e2)
-# o uso de \ força símbolos especiais para dentro da frase
+# o uso de ‘\’ força símbolos especiais para dentro da frase
 # sem erros
 print('para \'bc\'...')
 
-''' para escrever frases ou comentários no código
- com mais de uma linha, usamos 3 aspas 
+''' Para escrever frases ou comentarios no código com mais de uma linha, podemos usar 3 aspas 
 '''
-print(""" As aspas dupla 
+print(""" As aspas duplas 
 também são aceitas""")
 
 #Podemos usar operações para repetir padrões em uma frase
 # e também podemos juntar 2 frases distintas
 f1= 2*"vai descer, "
-f2= "...música maldita"
+f2= "...música chiclete irritante"
 print(f1+f2)
-#podemos selecionar um símbolo específico de
-#  uma frase a partir da contagem de caracteres
-#  lembrando que toda contagem em python começa
-#  em 0, 1, 2 ...
+
+'''Podemos selecionar um símbolo específico de uma frase a partir da contagem de caracteres lembrando que toda contagem em python começa em 0, 1, 2 …'''
 print(f2[3])
-#utilizando contadores negativos, é feito 
-# a procura da direita(último) para esquerda(primeiro)
+
+'''Utilizando contadores negativos, é feito a procura da direita(último) para esquerda(primeiro)'''
 print(f2[-2]) # não faz sentido -0, então começa de -1
 
 #podemos também selecionar frases menores
-print(f2[3:])#posição 4 até o fim
-print(f2[3:10])#posição 4 até antes da 10 (de 4 a 9)
-print(f2[3:-2])#posição 4 até antes da penúltima
+print(f2[3:])# da quarta posição até o fim
+print(f2[3:10])#da quarta posição até antes da 10 (de 4 a 9)
+print(f2[3:-2])#da quarta posição até antes da penultima
 
-#não podemos alterar frases diretamente, 
-# mas usando operações podemos gerar novas
-# frases a partir da original
+#não podemos alterar frases diretamente, mas usando operações podemos gerar novas frases a partir da original
 print('uia '+f2[3:6])
+
 # ao invés de contar, podemos pedir o tamanho
 #  das frases diretamente
 print(len('caneta azul'))
@@ -83,12 +78,12 @@ print(len('caneta azul'))
 ########
 
 quadrados= [0,1,4,9,16]
-#de forma parecida com frases, podemos
-#  selecionar elementos de listas, juntar listas
-#  e pedir seu tamanho
+
+'''De forma parecida com as frases, podemos selecionar elementos de listas, juntar listas e pedir seu tamanho'''
 print(quadrados[2], len(quadrados))
 print(quadrados[1:3] + [25])
-#porém, diferente de frases, podemos mudar valores 
+
+#porém, diferente de frases, podemos mudar os valores 
 # das listas diretamente
 quadrados[1]=0
 print(quadrados)
@@ -107,11 +102,8 @@ l1.append(4*3)
 l1.append(5**2)
 print(l1)
 
-#podemos, se necessário, dar vários nomes 
-# para uma mesma coisa
+#podemos, se necessário, dar vários nomes para uma mesma coisa
 l5=l1
-# o símbolo == verifica se dois objetos
-# são iguais
-#  'id' devolve o endereço de memoria
-#   que o objeto foi guardado
+# o simbolo ‘==’ verifica se dois objetos são iguais
+# 'id' devolve o endereço de memória que o objeto foi guardado
 print(l5 == l1, id(l5)==id(l1))
