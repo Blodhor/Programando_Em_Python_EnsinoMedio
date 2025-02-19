@@ -51,58 +51,43 @@ $ sudo apt-get install python3-pip
 
 Aula 1:
 --
-
-Código "Iniciando.py"
-
     Conteúdo:
       1. Introdução aos comandos e funcionalidades do Python;
       2. Operações com números, textos e listas.
 
-Código "Fundamentos.py"
-
+Aula 2:
+--
     Conteúdo:
         1. Ciclos;
         2. Interação com o programa (comando input);
         3. Estrutura condicional if-elif-else;
         4. Atividades.
 
-Aula 2
+Aula 3:
 --
-
-Código "Fundamentos2.py":
-    
     Conteúdo:
         1. Ciclos infinitos;
         2. Definição de Métodos;
         3. Funções matemáticas (comando lambda);
         4. Atividades.
 
-Aula 3
+Aula 4:
 --
-
-Código "Gráficos.py":
-
     Conteúdo:
       1. Uso de bibliotecas não padrão (instalar o matplotlib se não estiver usando o Google Colab);
       2. Construindo um gráfico com uma lista de pontos;
       3. Atividade.
 
-Aula 4:
+Aula 5:
 --
-
-Código "Vetores.py":
-
     Conteúdo:
         1. Vetores no plano XY;
         2. Uso do método "classe" para definir um vetor;
         3. Uso do método quiver do matplotlib para mostrar os vetores em gráfico;
         4. Atividades.
 
-Aula 5:
+Aula 6:
 --
-
-Código "Equacoes.py":
-
     Conteúdo:
         1. Expressões matemáticas (variável 'x' sem valores específicos);
         2. Expandindo e fatorando equações;
