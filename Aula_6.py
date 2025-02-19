@@ -1,4 +1,4 @@
-# Baseado no tutorial de https://docs.sympy.org/latest/tutorials/intro-tutorial/index.html
+# Baseado no tuotrial de https://docs.sympy.org/latest/tutorials/intro-tutorial/index.html
 import sympy as sp
 
 # sympy foi feito para cálculos matemáticos exatos, sem aproximações
@@ -60,11 +60,11 @@ ex: x**2 = 10,
 use o método sp.nonlinsolve()'''
 
 '''
-Atividade: Sobre um rio, há uma ponte de 20 metros de altura de onde um
+Atividade 8: Sobre um rio, há uma ponte de 20 metros de altura de onde um
  pescador deixa cair um anzol ligado a um peso de chumbo. Esse anzol, que cai
  a partir do repouso e em linha reta, atinge uma lancha que se deslocava com 
  velocidade constante de 20 m/s por esse rio. Nessas condições, desprezando a 
  resistência do ar e admitindo que a aceleração gravitacional seja g=10 m/s**2,
  pode-se afirmar que no exato momento do início da queda do anzol a lancha 
- estava a uma distência do vertical da queda, em metros, de:
+ estava a uma distância do vertical da queda, em metros, de:
 '''
