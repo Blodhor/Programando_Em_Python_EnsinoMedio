@@ -85,7 +85,7 @@ if __name__ == "__main__":
     # Caso queira ver quando a altura zera: 
     #Grafico(f=s,pontos=317,delta=0.01,linha=True)
     '''
-Atividade 1:
+Atividade 5:
 Um trabalhador mora a 2,4 km de distância do 
 seu emprego. Ele tem que decidir entre duas 
 opções de transporte para chegar ao trabalho: 
