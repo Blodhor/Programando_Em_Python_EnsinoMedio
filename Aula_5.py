@@ -208,10 +208,10 @@ if __name__ == "__main__":
     c = a+b
     Mostre_vetor([a,b,c])
     '''
-Atividade 1: Implemente o produto por escalar e mostre com gráfico.
+Atividade 6: Implemente o produto por escalar e mostre com gráfico.
 Ex:  inicio: -> ; após produto por 3: --->
 
-Atividade 2: Em uma brincadeira de caça ao tesouro, o mapa diz que para chegar
+Atividade 7: Em uma brincadeira de caça ao tesouro, o mapa diz que para chegar
  ao local onde a arca de ouro está enterrada, deve-se, primeiramente, dar 10
  passos na direção norte, depois 12 passos para o leste, em seguida, 7 passos
  para o sul, e finalmente 8 passos para oeste.
