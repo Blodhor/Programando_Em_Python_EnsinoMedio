@@ -6,7 +6,7 @@ Aula 3:
 
 Aula 4:
 --
-    Conteúdo:
+    Conteúdo: (Foco em: Ondas Mecânicas em um Fio Homegêneo)
       1. Uso de bibliotecas não padrão (instalar o matplotlib se não estiver usando o Google Colab);
       2. Construindo um gráfico com uma lista de pontos;
       3. Atividade.
