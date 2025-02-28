@@ -65,4 +65,10 @@ Aula 2:
         3. Estrutura condicional if-elif-else;
         4. Atividades.
 
-As aulas 3 a 6 são específicas de cada série.
+Aula 3-base:
+--
+    Conteúdo:
+        1. Ciclos infinitos;
+        2. Definição de Métodos;
+        
+A continuação da aula 3 e as aulas 4 a 6 são específicas de cada série.
