@@ -2,7 +2,8 @@ Aula 3:
 --
     Conteúdo:
         1. Funções matemáticas (comando lambda);
-        2. Atividades.
+        2. Ondas em cordas homogêneas e optica (espelhos planos);
+        3. Atividades.
 
 Aula 4:
 --
