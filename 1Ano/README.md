@@ -1,10 +1,8 @@
 Aula 3:
 --
     Conteúdo:
-        1. Ciclos infinitos;
-        2. Definição de Métodos;
-        3. Funções matemáticas (comando lambda);
-        4. Atividades.
+        1. Funções matemáticas (comando lambda);
+        2. Atividades.
 
 Aula 4:
 --
