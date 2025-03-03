@@ -23,4 +23,5 @@ Aula 5:
 Aula 6:
 --
     Conteúdo:
-        1. 
+        1. Resolução de um problema de espelhos esféricos junto com dilatação linear;
+        2. Atividade.
