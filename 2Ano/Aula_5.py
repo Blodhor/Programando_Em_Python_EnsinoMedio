@@ -1,8 +1,7 @@
 # Baseado no tuotrial de https://docs.sympy.org/latest/tutorials/intro-tutorial/index.html
 import sympy as sp
 
-'''O sympy foi criado para resolver cálculos matemáticos exatos, sem aproximações. Exemplo: a raiz de 8'''
-# o método padrão por potencia aproxima
+'''O sympy foi criado para resolver cálculos matemáticos exatos, sem aproximações. Exemplo: a raiz de 8; O método padrão por potencia aproxima o valor'''
 print(8**0.5)
 # o sympy apenas simplifica
 print(sp.sqrt(8))
@@ -23,8 +22,8 @@ print("Fatorando", sp.factor(x**2 + 2*x*y))
 
 #Resolvendo equações
 eq1 = x**2 -2
-sol1 = sp.solve(eq1, x) #O solve iguala eq1 a zero e isola o 'x'
-''' x**2 -2 = 0  -> x? '''
+sol1 = sp.solve(eq1, x)
+'''O solve iguala eq1 a zero e isola o 'x'. Nesse caso: x**2 -2 = 0  -> quanto é x? '''
 sol2 = sp.solve(f2,y) # resolva em 'y'
 print("Eq:", eq1, "= 0, solução em x:",sol1)
 print("Eq:", f2, "= 0, solução em y:",sol2)
