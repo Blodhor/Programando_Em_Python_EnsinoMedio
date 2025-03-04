@@ -3,9 +3,7 @@
 
 '''Uma forma de definir funções matemáticas é utilizando o método 'lambda'. Abaixo definiremos a velocidade de propagação de um pulso transversal em uma corda homogênea'''
 def Velocidade_prop_corda(den):
-    ''' v = (T/den)**0.5
-    T == Tração na corda | den == desnsidade linear da corda
-    Devolve a função da velocidade em relação a Tração.'''
+    '''Devolve a função da velocidade em relação a Tração. Onde v = (T/den)**0.5; T == Tração na corda | den == desnsidade linear da corda'''
     return lambda T: (T/den)**0.5
 def Densidade_linear(massa,comprimento):
     return massa/comprimento
@@ -18,8 +16,7 @@ def Frequencia(periodo):
     return 1/periodo
 
 if __name__=="__main__":
-    #Exemplo:
-    '''A velocidade de propagação v de um pulso transversal numa corda depende da força de tração T com que a corda é esticada e de sua densidade linear d (v==(T/d)**0.5). Um cabo de aço, com 2,0 m de comprimento e 200 g de massa, é esticado com força de tração de 40 N. A velocidade de propagação de um pulso nesse cabo é, em m/s,'''
+    '''Exemplo: A velocidade de propagação v de um pulso transversal numa corda depende da força de tração T com que a corda é esticada e de sua densidade linear d (v==(T/d)**0.5). Um cabo de aço, com 2,0 m de comprimento e 200 g de massa, é esticado com força de tração de 40 N. A velocidade de propagação de um pulso nesse cabo é, em m/s,'''
     d = Densidade_linear(0.2, 2) # 0.2kg; 2m
     vel = Velocidade_prop_corda(d)
     #Para uma tração de 40N temos
