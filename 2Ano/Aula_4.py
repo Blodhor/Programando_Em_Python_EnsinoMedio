@@ -16,26 +16,10 @@ def Onda(amplitude,frequencia,fase):
 '''Lembrete: Frequência = velocidade/cp ; cp=comprimento de onda | fase apenas indica de onde "começa" a onda'''
 
 def Grafico(f=Onda(1,1,0), pontos=5, eixox='X (m)', eixoy='Y (m)', delta=0.5, linha=False):
-    '''
-    f:        função que utilizaremos
-    pontos: quantidade de pontos no gráfico
-    eixox:  nome no eixo x
-    eixoy:  nome no eixo y
-    delta:  espaçamento entre pontos consecutivos no eixo x
-    linha:
-     +se True, constrói o gráfico com uma linha ligando os pontos (fica incorreto com poucos pontos)
-     +se False, constrói o gráfico com pontos apenas'''
-    #Precisamos criar a interface com os eixos
-    # para isso chamamos o método figure
+    '''Parâmetros: (f) função que utilizaremos; (pontos) quantidade de pontos no gráfico; (eixox) nome no eixo x; (eixoy) nome no eixo y; (delta) espaçamento entre pontos consecutivos no eixo x; (linha) se 'True', constrói o gráfico com uma linha ligando os pontos (fica incorreto com poucos pontos)| se 'False', constrói o gráfico com pontos apenas'''
+    '''Precisamos criar a interface com os eixos, para isso chamamos o método figure'''
     fig = plt.figure(dpi=150)
-    '''O dpi é a qualidade desejada onde 100 é razoavel e 300 é muito alta. Para colocar nossa função no gráfico, basta gerar uma lista de pontos. Caso f = x**2, precisa-se de alguns valores como:
-       se x=-2, f= 4
-        se x=-1, f= 1
-        se x=0, f= 0
-        se x=1, f= 1
-        se x=2, f= 4
-Assim teremos as listas: x=[-2,-1,0,1,2] e y=[4,1,0,1,4];
-A nossa função será a dada como 'f'. Aqui assumimos por conveniência que só importa os valores positivos do eixo x (tempo). Podemos criar uma lista com o seguinte comando'''
+    '''O 'dpi' é a qualidade desejada onde 100 é razoavel e 300 é muito alta. Para colocar nossa função no gráfico, basta gerar uma lista de pontos. Caso f = x**2, precisa-se de alguns valores como: se x=-2, f= 4| se x=-1, f= 1| se x=0, f= 0| se x=1, f= 1; Assim teremos as listas: x=[-2,-1,0,1] e y=[4,1,0,1]. A nossa função aqui será a dada por 'f'. Aqui assumimos por conveniência que só importa os valores positivos do eixo x (tempo). Podemos, então, criar uma lista com o seguinte comando'''
     x=[delta*i for i in range(pontos)]
     '''Se usar '0.5*i for i in range(4)' i assumiria os valores de 0,1,2,3 então ficariamos com a lista [0, 0.5, 1.0, 1.5]'''
     y=[]
@@ -44,15 +28,16 @@ A nossa função será a dada como 'f'. Aqui assumimos por conveniência que só
         y.append(f(i))
 
     #Para deixar o gráfico mais fácil de ler, daremos nomes aos eixos
-    plt.ylabel(eixoy, fontsize=12) # fontzise é o tamanho da letra nas legendas
+    plt.ylabel(eixoy, fontsize=12) 
+    # fontzise é o tamanho da letra nas legendas
     plt.xlabel(eixox, fontsize=12) 
     plt.grid(True)
-    # grid pede para desenhar a grade nos eixos, mas não é necessário de ter
-    # com as listas de x e y pasta coloca-las no gráfico
+    #O grid pede para desenhar a grade nos eixos
     if linha:
         plt.plot(x,y)
     else:
-        plt.plot(x,y,'o') #'o' indica que é para mostrar pontos no gráfico
+        plt.plot(x,y,'o')
+        #'o' indica que é para mostrar pontos no gráfico
     plt.show() 
     ''' Sem o comando show, dependendo de onde você programa, não mostrará o gráfico. Lembre que acima apenas definimos os métodos e não pedimos para o código fazer de fato o gráfico. Dica: Quando queremos que os comandos abaixo executem apenas quando executamos esse arquivo usamos o bloco __main__'''
 
@@ -104,11 +89,9 @@ if __name__ == "__main__":
     o1 = Onda(1,1,0)
     # Chamamos a criação do gráfico com 11 pontos a cada 0.3 m
     #Grafico(f=o1,pontos=11,delta=0.3)
-    '''com poucos pontos fica ilegível, então aumentamos os pontos e diminuimos o espaçamento'''
+    '''Com poucos pontos fica ilegível, então aumentamos os pontos e diminuimos o espaçamento'''
     #Grafico(f=o1,pontos=300,delta=0.01,linha=True)
     o2 = Onda(1,0.5,0)
     Grafico_multionda(ondas=[o1,o2],pontos=400,delta=0.01,linha=True)
     '''Atividade 5: A partir das definições da Aula 4 e dada a onda o=Onda(1.2,0.25,np.pi/2), qual é o comprimento de onda
- e sua velocidade de propagação?
- 
-'''
+ e sua velocidade de propagação?'''
