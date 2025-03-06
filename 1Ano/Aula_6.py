@@ -50,11 +50,31 @@ solsis2 = sp.nonlinsolve([x**2-2*y, sp.Eq(6*x+y,-18)], (x,y))
 print("Solução do sistema não linear:", solsis2)
 
 '''
-Atividade 8: Sobre um rio, há uma ponte de 20 metros de altura de onde um
- pescador deixa cair um anzol ligado a um peso de chumbo. Esse anzol, que cai
- a partir do repouso e em linha reta, atinge uma lancha que se deslocava com 
- velocidade constante de 20 m/s por esse rio. Nessas condições, desprezando a 
- resistência do ar e admitindo que a aceleração gravitacional seja g=10 m/s**2,
- pode-se afirmar que no exato momento do início da queda do anzol a lancha 
- estava a uma distância do vertical da queda, em metros, de:
+Atividade 8:Um pequeno motor a pilha é utilizado para
+movimentar um carrinho de brinquedo. Um sistema de
+engrenagens transforma a velocidade de rotação des-
+se motor na velocidade de rotação adequada às rodas
+do carrinho. Esse sistema é formado por quatro engre-
+nagens, A, B, C e D, sendo que A está presa ao eixo
+do motor, B e C estão presas a um segundo eixo e D a
+um terceiro eixo, no qual também estão presas duas das
+quatro rodas do carrinho.
+
+Nessas condições, quando o motor girar com frequência
+fM, as duas rodas do carrinho girarão com frequência fR.
+Sabendo que as engrenagens A e C possuem 8 dentes,
+que as engrenagens B e D possuem 24 dentes, que não
+há escorregamento entre elas e que fM=13.5Hz é correto 
+afirmar que fR, em Hz, é igual a
+
+Atividade 9: Um bloco escorrega, livre de resistência do
+ar, sobre um plano inclinado de 30° conforme a figura
+(sem escala) a seguir.
+
+No trecho AB não existe atrito e no trecho BC o coefi-
+ciente de atrito vale mu = sqrt(3)/2. O bloco é abandonado,
+do repouso em relação ao plano inclinado, no ponto A e chega
+ao ponto C com velocidade nula. A altura do ponto A, em 
+relação ao ponto B, é h1, e a altura do ponto B, em relação
+ao ponto C, é h2. Quanto vale a razão h1/h2?
 '''
