@@ -8,7 +8,7 @@ A partir dessas informações:
     até o ponto de chegada, quantos passos ele daria?'''
 
 #Para isso usaremos os métodos já prontos de Vetores.py
-from Aula_5_1ano import Vetor2D, Mostre_vetor
+from Aula_5 import Vetor2D, Mostre_vetor
 
 # Para conectar a trajetória
 # o 'pe' do próximo vetor será a 'ponta' do anterior
