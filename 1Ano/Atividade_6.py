@@ -2,7 +2,7 @@
 Ex:  inicio: -> ; após produto por 3: --->'''
 # Podemos reaproveitar o código de "Vetores.py"
 # Lembre de deixar os arquivos na mesma pasta
-from Aula_5_1ano import Vetor2D, Mostre_vetor
+from Aula_5 import Vetor2D, Mostre_vetor
 
 # Para implementar o produto por escalar, basta adicionar o metódo em Vetor2D
 # Utilizaremos Herença para isso
