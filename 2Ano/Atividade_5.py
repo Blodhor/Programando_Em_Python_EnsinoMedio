@@ -6,7 +6,7 @@ A velocidade de propagação obtemos ao multiplicar a frequência pelo comprimen
  vel = freq * comp
 O comprimento de onda conseguimos direto do gráfico de o
 '''
-from Aula_4_2ano import*
+from Aula_4 import*
 
 o = Onda(amplitude=1.2,frequencia=0.25,fase=np.pi/2)
 Grafico(o,pontos=101,delta=0.08,linha=True)
